@@ -6,7 +6,7 @@ import  CarCard from "@/components/CarCard";
 import ShowMore from"@/components/ShowMore";
 import CustomFilter from  "@/components/CustomFilter";
 import  Hero from "../components/Hero";
-import  SearchBar from "../components/Searchbar";
+import  SearchBar from "../components/SearchBar";
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
